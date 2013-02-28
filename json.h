@@ -24,7 +24,6 @@ extern "C" {
 #include "json_util.h"
 #include "json_object.h"
 #include "json_tokener.h"
-#include "json_object_iterator.h"
 
 #ifdef __cplusplus
 }
