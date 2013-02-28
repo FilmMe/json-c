@@ -1,0 +1,20 @@
+Package: json-c
+Version: #VER#
+Section: custom
+Priority: optional
+Architecture: #ARCH#
+Essential: no
+Depends: 
+Pre-Depends: 
+Recommends: 
+Suggests: 
+Installed-Size: 500Kb
+Maintainer: filmme.tv <info@filmme.tv>
+Conflicts:
+Replaces: 
+Provides: json-c
+Description: json-c
+ .
+ Json parser/builder library for C
+
+
