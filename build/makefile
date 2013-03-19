@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2013 FilmMe Group Oy
 # makefile for json-c DEB build
+# note: run make as root
 #
 
 PRODUCT="json-c"
@@ -15,7 +16,7 @@ all:
 	cat src/control  | sed s/#VER#/$(VER)/ | sed s/#ARCH#/$(ARCH)/ > $(ROOT)/DEBIAN/control
 	cp src/postinst $(ROOT)/DEBIAN/postinst
 	# copy content
-	./cp2 "../.libs/libjson.so.$VER" $(ROOT)/usr/local/lib/
+	./cp2 ../.libs libjson.so.$(VER) $(ROOT)/usr/local/lib
 	# make deb package
 	dpkg-deb --build $(ROOT)
 	# remove temp directory
